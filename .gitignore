@@ -4,3 +4,10 @@
 *.jar
 *.war
 *.ear
+
+# Additional Eclipse specific files
+.classpath
+.project
+.settings/
+target/
+
