@@ -2,5 +2,7 @@ some test string
 
 
 <bla>
-	unchanged
+	<additional>
+		changed
+	</additional>
 </bla>
