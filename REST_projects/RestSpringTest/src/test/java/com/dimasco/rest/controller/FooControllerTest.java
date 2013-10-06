@@ -1,13 +1,10 @@
 package com.dimasco.rest.controller;
 
 import static com.jayway.restassured.RestAssured.*;
-import static com.jayway.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.client.RestTemplate;
 
 import com.dimasco.rest.domain.Foo;
 import com.jayway.restassured.http.ContentType;
@@ -21,9 +18,6 @@ public class FooControllerTest {
 	
 	private static final String PASSWORD = "dimas";
 	
-	@Autowired
-	private RestTemplate restTemplate;
-
 	@Test
 	public void whenInvalidPOSTIsSentToValidURIOfResource_thenAllowHeaderListsTheAllowedActions() {
 		//final String uriOfExistingResource = restTemplate
